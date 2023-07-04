@@ -16,26 +16,20 @@ header {
   background-color: blueviolet;
   height: 10vh;
   width: 100%;
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
 }
 
 .title-app {
-  text-align: center;
-}
-
-footer {
-  background-color: blueviolet;
-  height: 10vh;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .main-content {
-  background-color: red;
   width: 100%;
   position: absolute;
   top: 10vh;
@@ -48,7 +42,100 @@ footer {
 
 .card-section {
   width: 90%;
-  height: 200px;
-  background-color: blue;
+  height: 400px;
+  background-color: darkgrey;
+  border-radius: 5px;
   margin: 20px;
+  margin-top: 50px;
+  position: relative;
+  padding: 5%;
+}
+
+.--quiz-question {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.--quiz-button {
+  height: 10%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5%;
+  border-radius: 20px;
+  border: black solid 2px;
+  padding: 10px;
+}
+
+/* button hide to use for the future */
+.--button-text-hidden {
+  display: none;
+}
+
+.--bookmark-icon-card {
+  position: absolute;
+  top: -5%;
+  right: 3%;
+  max-width: 10%;
+  z-index: 1000;
+}
+
+.tags-card {
+  height: 10%;
+  width: 90%;
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.--tags-element {
+  background-color: lightgrey;
+  padding: 10px;
+  border: black solid 2px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-left: -5%;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+.--navbar-home {
+  width: calc(100vw / 3);
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--navbar-home-img,
+.--navbar-bookmark-img,
+.--navbar-profile-img {
+  max-width: 30%;
+}
+
+.bottom-space {
+  width: 100%;
+  height: 20%;
 }
