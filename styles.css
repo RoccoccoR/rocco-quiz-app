@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: rgb(232, 227, 143);
+  position: relative;
+}
+
+header {
+  background-color: blueviolet;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.title-app {
+  text-align: center;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.main-content {
+  background-color: red;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  height: calc(100vh - 20vh);
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-section {
+  width: 90%;
+  height: 200px;
+  background-color: blue;
+  margin: 20px;
+}
