@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="profile.css" />
     <title>Rocco's Quiz Bookmark</title>
   </head>
@@ -12,7 +12,7 @@
       <h1 class="title-app">Profile</h1>
     </header>
     <main class="main-content">
-      <section class="profile-section --first-card">
+      <section class="profile-section">
         <article class="--profile-card">
           <img
             class="profile-img"
@@ -29,20 +29,20 @@
           non quo?
         </p>
         <ul class="counter-container">
-          <p class="--questions-counter">
+          <article class="--questions-counter">
             <img
               class="--questions-counter-img"
               src="./images/question.png"
               alt="" />
-            12
-          </p>
-          <p class="--bookmark-counter">
+            <p>12</p>
+          </article>
+          <article class="--bookmark-counter">
             <img
               class="--bookmark-counter-img"
               src="./images/bookmark_filled.png"
               alt="" />
-            4
-          </p>
+            <p>4</p>
+          </article>
         </ul>
 
         <h4 class="settings-title">Settings</h4>
@@ -55,10 +55,11 @@
             </label>
           </section>
         </section>
+        <div class="bottom-space"></div>
       </section>
     </main>
     <div class="bottom-space"></div>
-    <footer class="">
+    <section class="navbar-container">
       <nav class="navbar">
         <a class="--navbar-home" href="index.html">
           <img class="--navbar-home-img" src="./images/home.png" alt=""
@@ -76,6 +77,6 @@
             alt=""
         /></a>
       </nav>
-    </footer>
+    </section>
   </body>
 </html>
