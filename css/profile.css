@@ -1,6 +1,7 @@
 .profile-section {
   width: 90%;
-  background-color: #a9a9a9;
+  height: 800px;
+  background-color: var(--dark-grey);
   border-radius: 5px;
   margin: 20px;
   margin-top: 50px;
