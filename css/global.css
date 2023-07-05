@@ -1,7 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e8e38f;
+  position: relative;
+}
+
+header {
+  background-color: #b268f8;
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.header__title-app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.main-content {
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  height: calc(100vh - 20vh);
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-section {
+  width: 90%;
+  height: 400px;
+  background-color: rgb(169, 169, 169);
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  padding: 5%;
+}
+
 :root {
   /* Color Variables */
 
   --light-pink: #b268f8;
   --light-sand: #e8e38f;
   --dark-grey: #a9a9a9;
+  --light-blue: #73def1;
+}
+
+main {
+  min-width: 300px;
+}
+
+.navbar-container {
+  background-color: rgb(178, 104, 248);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+.navbar__home,
+.navbar__bookmark,
+.navbar__profile {
+  width: calc(100vw / 3);
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__home-img,
+.navbar__bookmark-img,
+.navbar__profile-img {
+  max-width: 40px;
+}
+
+.navbar__bookmark-darker- {
+  background-color: #9253cc;
+  width: calc(100vw / 3);
+}
+
+.navbar__profile-darker-selection {
+  background-color: #9253cc;
+  width: calc(100vw / 3);
+}
+
+@media (min-width: 768px) {
+  .navbar__bookmark-darker-selection {
+    max-width: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .--navbar-bookmark-darker-selection {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .--bookmark-icon-card {
+    min-width: 30px;
+    max-width: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .--bookmark-icon-card {
+    min-width: 30px;
+    max-width: 40px;
+  }
 }

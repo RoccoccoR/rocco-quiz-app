@@ -8,88 +8,151 @@
   </head>
   <body>
     <header>
-      <h1 class="title-app">Quiz App</h1>
+      <h1 class="header__title-app">Quiz App</h1>
     </header>
     <main class="main-content">
-      <section class="card-section --first-card">
-        <article class="--question-card">
-          <img
-            aria-label="click this button to bookmark this card"
-            class="--bookmark-icon-card"
-            src="./images/bookmark.png"
-            alt="bookmark-empty-icon" />
-          <h2 class="--quiz-question">Is this the first question?</h2>
-          <button class="--quiz-button">
-            <p class="--button-text-show">Show Answer</p>
-          </button>
-          <button class="--button-text-hidden">
-            <p>Hidden Answer</p>
-          </button>
+      <section class="main__card-container unmarked-card">
+        <img
+          aria-label="click this button to bookmark this card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark.png"
+          alt="bookmark-empty-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
         </article>
-        <ul class="tags-card">
-          <p class="--tags-element">#first</p>
-          <p class="--tags-element">#second</p>
-          <p class="--tags-element">#third</p>
-        </ul>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
       </section>
-      <section class="card-section --first-card">
-        <article class="--question-card">
-          <img
-            aria-label="click this button to bookmark this card"
-            class="--bookmark-icon-card"
-            src="./images/bookmark.png"
-            alt="bookmark-empty-icon" />
-          <h2 class="--quiz-question">Is this the first question?</h2>
-          <button class="--quiz-button">
-            <p class="--button-text-show">Show Answer</p>
-          </button>
-          <button class="--button-text-hidden">
-            <p>Hidden Answer</p>
-          </button>
+      <section class="main__card-container unmarked-card">
+        <img
+          aria-label="click this button to bookmark this card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark.png"
+          alt="bookmark-empty-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
         </article>
-        <ul class="tags-card">
-          <p class="--tags-element">#first</p>
-          <p class="--tags-element">#second</p>
-          <p class="--tags-element">#third</p>
-        </ul>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
       </section>
-      <section class="card-section --first-card">
-        <article class="--question-card">
-          <img
-            aria-label="click this button to bookmark this card"
-            class="--bookmark-icon-card"
-            src="./images/bookmark.png"
-            alt="bookmark-empty-icon" />
-          <h2 class="--quiz-question">Is this the first question?</h2>
-          <button class="--quiz-button">
-            <p class="--button-text-show">Show Answer</p>
-          </button>
-          <button class="--button-text-hidden">
-            <p>Hidden Answer</p>
-          </button>
+      <section class="main__card-container unmarked-card">
+        <img
+          aria-label="click this button to bookmark this card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark.png"
+          alt="bookmark-empty-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
         </article>
-        <ul class="tags-card">
-          <p class="--tags-element">#first</p>
-          <p class="--tags-element">#second</p>
-          <p class="--tags-element">#third</p>
-        </ul>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
+      </section>
+      <section class="main__card-container unmarked-card">
+        <img
+          aria-label="click this button to bookmark this card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark.png"
+          alt="bookmark-empty-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
+        </article>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
+      </section>
+      <section class="main__card-container marked-card">
+        <img
+          aria-label="this is a bookmarked card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark_filled.png"
+          alt="bookmark-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
+        </article>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
+      </section>
+      <section class="main__card-container marked-card">
+        <img
+          aria-label="this is a bookmarked card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark_filled.png"
+          alt="bookmark-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
+        </article>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
+      </section>
+      <section class="main__card-container marked-card">
+        <img
+          aria-label="this is a bookmarked card"
+          class="main__card__bookmark-icon-card"
+          src="./images/bookmark_filled.png"
+          alt="bookmark-icon" />
+        <article class="main__card__box-question-button-answer">
+          <p class="main__card__box-question-card">To be, or not to be?</p>
+          <button class="main__card__button-show-answer">Show Answer</button>
+          <p class="main__card__answer">This is the answer</p>
+        </article>
+
+        <article class="main__card__box-card-tags">
+          <p class="main__card__tag">#first</p>
+          <p class="main__card__tag">#second</p>
+          <p class="main__card__tag">#third</p>
+        </article>
       </section>
       <div class="bottom-space"></div>
     </main>
 
     <section class="navbar-container">
       <nav class="navbar">
-        <a class="--navbar-home" href="index.html">
-          <img class="--navbar-home-img" src="./images/home_filled.png" alt=""
+        <a class="navbar__home navbar__home-darker-selection" href="index.html">
+          <img class="navbar__home-img" src="./images/home_filled.png" alt=""
         /></a>
-        <a class="--navbar-bookmark-img" href="bookmark.html">
+        <a class="navbar__bookmark" href="bookmark.html">
           <img
-            class="--navbar-bookmark-img"
+            class="navbar__bookmark-img"
             src="./images/bookmark_transparent.png"
             alt=""
         /></a>
-        <a class="--navbar-profile" href="profile.html"
-          ><img class="--navbar-profile-img" src="./images/profile.png" alt=""
+        <a class="navbar__profile" href="profile.html"
+          ><img class="navbar__profile-img" src="./images/profile.png" alt=""
         /></a>
       </nav>
     </section>
