@@ -79,6 +79,11 @@
   font-size: 20px;
 }
 
+.--navbar-profile-darker-selection {
+  background-color: #9253cc;
+  width: calc(100vw / 3);
+}
+
 .switch {
   position: relative;
   display: inline-block;
