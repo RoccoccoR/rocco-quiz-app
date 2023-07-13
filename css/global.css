@@ -119,18 +119,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  .navbar__bookmark-darker-selection {
-    max-width: 50px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .--navbar-bookmark-darker-selection {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
   .--bookmark-icon-card {
     min-width: 30px;
     max-width: 40px;
