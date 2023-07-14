@@ -82,13 +82,14 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  z-index: 1000;
+  z-index: 99;
 }
 
 .navbar__home,
 .navbar__bookmark,
-.navbar__profile {
-  width: calc(100vw / 3);
+.navbar__profile,
+.navbar__add-question {
+  width: calc(100vw / 4);
 }
 
 .navbar a {
@@ -99,23 +100,37 @@ main {
 
 .navbar__home-img,
 .navbar__bookmark-img,
-.navbar__profile-img {
+.navbar__profile-img,
+.navbar__add-question-img {
   max-width: 40px;
 }
 
-.navbar__home-darker-selection {
-  background-color: #9253cc;
-  width: calc(100vw / 3);
+.marked-bookmark {
+  content: url("../images/bookmark_filled.png");
 }
 
-.navbar__bookmark-darker-selection {
-  background-color: #9253cc;
-  width: calc(100vw / 3);
+.main__card__button-show-answer {
+  background-color: #73def1;
+  min-height: 50px;
+  max-height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border: black solid 2px;
+  background-color: #73def1;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar__profile-darker-selection {
+.navbar__home-darker-selection,
+.navbar__bookmark-darker-selection,
+.navbar__profile-darker-selection,
+.navbar__add-question-darker-selection {
   background-color: #9253cc;
-  width: calc(100vw / 3);
+  width: calc(100vw / 4);
 }
 
 @media (min-width: 768px) {
