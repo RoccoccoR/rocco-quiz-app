@@ -14,11 +14,6 @@
   align-items: center;
 }
 
-/* button hide to use for the future */
-.--button-text-hidden {
-  display: none;
-}
-
 .--unmarked-card {
   display: relative;
 }
