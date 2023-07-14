@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Rocco's Quiz App</title>
   </head>
   <body>
@@ -13,13 +14,16 @@
     <main class="main-content">
       <section class="main__card-container unmarked-card">
         <img
+          data-js="toggle-bookmark"
           aria-label="click this button to bookmark this card"
           class="main__card__bookmark-icon-card"
           src="./images/bookmark.png"
           alt="bookmark-empty-icon" />
         <article class="main__card__box-question-button-answer">
           <p class="main__card__box-question-card">To be, or not to be?</p>
-          <button class="main__card__button-show-answer">Show Answer</button>
+          <button data-js="show-answer" class="main__card__button-show-answer">
+            Show Answer
+          </button>
           <p class="main__card__answer">This is the answer</p>
         </article>
 
@@ -150,6 +154,9 @@
             class="navbar__bookmark-img"
             src="./images/bookmark_transparent.png"
             alt=""
+        /></a>
+        <a class="navbar__add-question" href="form.html"
+          ><img class="navbar__add-question-img" src="./images/add.png" alt=""
         /></a>
         <a class="navbar__profile" href="profile.html"
           ><img class="navbar__profile-img" src="./images/profile.png" alt=""

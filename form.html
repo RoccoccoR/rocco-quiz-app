@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="./js/form.js" defer></script>
+    <title>Rocco's Quiz Bookmark</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title-app">Form</h1>
+    </header>
+    <main class="main-content">
+      <form class="form" data-js="form">
+        <label class="form__question__label" for="form__question"
+          >Your question:</label
+        >
+        <textarea
+          class="form__question"
+          name="form__question"
+          id=""
+          cols="30"
+          rows="10"
+          maxlength="150">
+        </textarea>
+        <label for="form__answer">Your Answer:</label>
+        <textarea
+          class="form__answer"
+          name="form__answer"
+          id=""
+          cols="30"
+          rows="10"
+          maxlength="150">
+        </textarea>
+        <label for="form__tag">Tag:</label>
+        <input class="form__input" type="text" name="form__tag" />
+        <button
+          data-js="form-submit-button"
+          class="form__submit-button"
+          type="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+    <div class="bottom-space"></div>
+    <section class="navbar-container">
+      <nav class="navbar">
+        <a class="navbar__home" href="index.html">
+          <img class="navbar__home-img" src="./images/home.png" alt=""
+        /></a>
+        <a class="navbar__bookmark" href="bookmark.html">
+          <img
+            class="navbar__bookmark-img"
+            src="./images/bookmark_transparent.png"
+            alt=""
+        /></a>
+        <a
+          class="navbar__add-question navbar__add-question-darker-selection"
+          href="form.html"
+          ><img
+            class="navbar__add-question-img"
+            src="./images/add_filled.png"
+            alt=""
+        /></a>
+        <a class="navbar__profile" href="profile.html"
+          ><img class="navbar__profile-img" src="./images/profile.png" alt=""
+        /></a>
+      </nav>
+    </section>
+  </body>
+</html>
