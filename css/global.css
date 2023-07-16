@@ -103,6 +103,27 @@ main {
 .navbar__profile-img,
 .navbar__add-question-img {
   max-width: 40px;
+  transition: max-width 0.7s;
+}
+
+.navbar__home-img:hover,
+.navbar__home-img:focus,
+.navbar__bookmark-img:hover,
+.navbar__bookmark-img:focus,
+.navbar__profile-img:hover,
+.navbar__profile-img:focus,
+.navbar__add-question-img:hover,
+.navbar__add-question-img:focus {
+  animation: rotateOnce 0.7s forwards;
+}
+
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .marked-bookmark {
@@ -119,10 +140,14 @@ main {
   background-color: #73def1;
   padding: 10px;
   font-size: 20px;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s;
+}
+
+.main__card__button-show-answer:hover {
+  transform: scale(1.1);
 }
 
 .navbar__home-darker-selection,
@@ -131,6 +156,13 @@ main {
 .navbar__add-question-darker-selection {
   background-color: #9253cc;
   width: calc(100vw / 4);
+}
+
+.navbar__home:hover,
+.navbar__bookmark:hover,
+.navbar__profile:hover,
+.navbar__add-question:hover {
+  background-color: #9253cc;
 }
 
 @media (min-width: 768px) {

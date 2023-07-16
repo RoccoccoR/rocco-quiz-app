@@ -1,25 +1,27 @@
-//bookmark toggle
+const toggleBookmarks = document.querySelectorAll(
+  '[data-js="toggle-bookmark"]'
+);
+const showAnswerButtons = document.querySelectorAll('[data-js="show-answer"]');
+const answerParagraphs = document.querySelectorAll(".main__card__answer");
 
-const toggleBookmark = document.querySelector('[data-js="toggle-bookmark"]');
-
-toggleBookmark.addEventListener("click", () => {
-  toggleBookmark.classList.toggle("marked-bookmark");
+toggleBookmarks.forEach((toggleBookmark) => {
+  toggleBookmark.addEventListener("click", () => {
+    toggleBookmark.classList.toggle("marked-bookmark");
+  });
 });
 
-//answer button
+showAnswerButtons.forEach((showAnswerButton, index) => {
+  const answerParagraph = answerParagraphs[index];
 
-const showAnswerButton = document.querySelector('[data-js="show-answer"]');
-const answerParagraph = document.querySelector(".main__card__answer");
+  answerParagraph.style.display = "none";
 
-answerParagraph.style.display = "none";
-//Hide the answer initially
-
-showAnswerButton.addEventListener("click", () => {
-  if (answerParagraph.style.display === "none") {
-    answerParagraph.style.display = "block";
-    showAnswerButton.innerHTML = "Hide Answer";
-  } else {
-    answerParagraph.style.display = "none";
-    showAnswerButton.innerHTML = "Show Answer";
-  }
+  showAnswerButton.addEventListener("click", () => {
+    if (answerParagraph.style.display === "none") {
+      answerParagraph.style.display = "block";
+      showAnswerButton.innerHTML = "Hide Answer";
+    } else {
+      answerParagraph.style.display = "none";
+      showAnswerButton.innerHTML = "Show Answer";
+    }
+  });
 });
