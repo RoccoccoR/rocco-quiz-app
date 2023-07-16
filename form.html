@@ -20,23 +20,30 @@
         >
         <textarea
           class="form__question"
+          maxlength="150"
+          data-js="textCharactersCounter"
           name="form__question"
-          id=""
-          cols="30"
-          rows="10"
-          maxlength="150">
-        </textarea>
-        <span class="questionCharactersLeft">150 characters left</span>
-        <label for="form__answer">Your Answer:</label>
+          id="form__question"
+          cols="24"
+          rows="3"></textarea>
+        <small class="form__character-count"
+          >(<span data-js="amountLeft1"></span> characters left)</small
+        >
+
+        <label class="form__answer__label" for="form__answer"
+          >Your answer:</label
+        >
         <textarea
           class="form__answer"
+          maxlength="150"
+          data-js="textCharactersCounter"
           name="form__answer"
-          id=""
-          cols="30"
-          rows="10"
-          maxlength="150">
-        </textarea>
-        <span class="questionCharactersLeft">150 characters left</span>
+          id="form__answer"
+          cols="24"
+          rows="3"></textarea>
+        <small class="form__character-count"
+          >(<span data-js="amountLeft2"></span> characters left)</small
+        >
         <label for="form__tag">Tag:</label>
         <input class="form__input" type="text" name="form__tag" />
         <button
