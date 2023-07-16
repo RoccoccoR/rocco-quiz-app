@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="profile.css" />
+    <script src="./js/profile.js" defer></script>
     <title>Rocco's Quiz Bookmark</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <h1 class="header__title-app">Profile</h1>
     </header>
     <main class="main-content">
-      <section class="profile-section">
+      <section class="profile-section dark-card-section">
         <article class="--profile-card">
           <img
             class="profile-img"
@@ -49,9 +50,9 @@
         <section class="dark-mode-container">
           <h4>Dark Mode</h4>
           <section class="--dark-mode-button">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <span class="ball"></span>
             </label>
           </section>
         </section>
