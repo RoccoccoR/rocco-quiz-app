@@ -7,9 +7,62 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  /* Color Variables */
+
+  --light-pink: #b268f8;
+  --light-sand: #e8e38f;
+  --dark-grey: #a9a9a9;
+  --off-black: #111111;
+  --light-blue: #73def1;
+}
+
 body {
   background-color: #e8e38f;
   position: relative;
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background-color: black;
+}
+
+/* body.dark h1,
+body.dark .support a {
+  color: #fff;
+} */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
 
 header {
@@ -55,13 +108,19 @@ header {
   padding: 5%;
 }
 
-:root {
-  /* Color Variables */
+.dark-card-section {
+  width: 90%;
+  height: 400px;
+  background-color: var(--off-black);
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 
-  --light-pink: #b268f8;
-  --light-sand: #e8e38f;
-  --dark-grey: #a9a9a9;
-  --light-blue: #73def1;
+  padding: 5%;
 }
 
 main {
@@ -143,12 +202,58 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s;
+  transition: transform 1s ease-in-out;
 }
 
 .main__card__button-show-answer:hover {
-  transform: scale(1.1);
+  cursor: pointer;
+  animation: scaleButton 1s infinite alternate;
 }
+
+@keyframes scaleButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .main__card__button-show-answer {
+  background-color: #73def1;
+  min-height: 50px;
+  max-height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border: black solid 2px;
+  background-color: #73def1;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out 1s;
+}
+
+.main__card__button-show-answer:hover {
+  cursor: pointer;
+  animation: scaleButton 1s forwards;
+}
+
+@keyframes scaleButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
 
 .navbar__home-darker-selection,
 .navbar__bookmark-darker-selection,
